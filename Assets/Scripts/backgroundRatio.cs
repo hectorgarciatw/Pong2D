@@ -1,10 +1,10 @@
-﻿using System.Collections;
+﻿/* Script para ajustar el tamaño del background del juego de forma automática */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class backgroundRatio : MonoBehaviour
 {
-
     void Awake(){
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         //orthographicSize devuelve mitad de la altura de la camara en unidades de unity (no pixeles)
@@ -22,15 +22,5 @@ public class backgroundRatio : MonoBehaviour
         
         transform.position = Vector2.zero;
         transform.localScale = scale;
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
     }
 }

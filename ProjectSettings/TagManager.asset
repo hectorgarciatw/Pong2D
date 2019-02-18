@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - RightPaddle
   - LeftPaddle
+  - LeftWall
+  - RightWall
   layers:
   - Default
   - TransparentFX

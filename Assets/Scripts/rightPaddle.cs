@@ -13,8 +13,7 @@ public class rightPaddle : MonoBehaviour
     private Rigidbody2D rb;
     public string axis = "Vertical";
 
-    void Start()
-    {   
+    void Start(){   
         speed = 5;  
         //Fijo la posición del Paddle izquierdo en el lugar correcto
         topRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
@@ -26,8 +25,7 @@ public class rightPaddle : MonoBehaviour
     }
 
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
-    void FixedUpdate()
-    {
+    void FixedUpdate(){
         verticalDir = Input.GetAxisRaw(axis);
         rb.velocity = new Vector2(0, verticalDir) * speed;
     }
